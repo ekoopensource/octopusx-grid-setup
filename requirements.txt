@@ -1,0 +1,12 @@
+#console App Image
+ocx-console-app:latest
+
+
+questions
+
+* how to setup the docker  composer
+* how to setup env requirements
+* how to push images to dockerhub
+* how to properly build and run images
+* how to access filepath of apps installed by docker
+* how to run scripts ( npm install -g etc.. ) from docker image

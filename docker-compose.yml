@@ -1,0 +1,10 @@
+version: '3'
+services:
+  OcxApp:
+    image: ocx-console-app:latest
+    ports:
+      - "9000:80"
+    env_file: .env
+    environment: 
+        - OCX_GRID_MAIN=""
+        - OCX_GRID_HOST=""
