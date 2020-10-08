@@ -4,7 +4,7 @@ ocx-console-app:latest
 
 questions
 
-* how to setup the docker  composer
+* how to setup the docker  compose
 * how to setup env requirements
 * how to push images to dockerhub
 * how to properly build and run images

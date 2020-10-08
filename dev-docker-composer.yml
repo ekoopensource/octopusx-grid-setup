@@ -1,0 +1,12 @@
+version: '3'
+services:
+  OcxInstaller:
+    image: ocx-installer
+  OcxApp:
+    image: ocx-console-app:latest
+    ports:
+      - "9000:80"
+    volumes:
+      - ./ocx-app:/var/www/ocxApp
+      - /var/www/ocxApp/node_modules
+    env_file: .env
