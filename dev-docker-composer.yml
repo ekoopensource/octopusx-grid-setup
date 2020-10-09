@@ -1,12 +1,26 @@
 version: '3'
 services:
-  OcxInstaller:
-    image: ocx-installer
-  OcxApp:
-    image: ocx-console-app:latest
-    ports:
-      - "9000:80"
+  #  OcxInstaller:
+  #    image: tomideo1/octopusx-grid-installer
+  ocxapp:
+    #    image:  ekoopensource/octopusx-console:latest
+    build:
+      context: ../ocx-app
     volumes:
-      - ./ocx-app:/var/www/ocxApp
-      - /var/www/ocxApp/node_modules
-    env_file: .env
+      - ../ocx-app:/app
+      - /app/node_modules
+    ports:
+      - "5000:8080"
+    env_file:
+      - .env
+  OcxAccess:
+    image: ekoopensource/octopusx-access:v1.01
+    env_file:
+      - .env
+    ports:
+      - "5001:5000"
+#    networks:
+#      - octopusx-default-network
+#networks:
+#  octopusx-default-network:
+#    external: true
