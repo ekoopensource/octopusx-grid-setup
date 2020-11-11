@@ -28,7 +28,7 @@ echo "- - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
 echo "STARTED MAIN NODE INSTALLATION...(${main_node})"
 
 #insall main node
-./install-node/main-node/install.sh $main_node $grid_name
+./install-node/main-node/install.sh $region $grid_name $main_node
 
 echo "MAIN NODE INSTALLATION COMPLETED...(${main_node})"
 

@@ -7,7 +7,8 @@ node=$3
 
 #install main node (aws)
 
-terraform init $(pwd)/install-node/main-node && terraform apply -var="cluster_name=${grid}" -var="region=${region}" -var="namespace=${node}" -input=false -auto-approve -state=states/grid/${grid}.state -state-out=states/nodes/${node}-${grid}.state $(pwd)/install-node/main-node
+terraform init $(pwd)/install-node/main-node \
+&& terraform apply -var="cluster_name=${grid}" -var="region=${region}" -var="namespace=${node}" -input=false -auto-approve -state=states/grid/${grid}.state -state-out=states/nodes/${node}-${grid}.state $(pwd)/install-node/main-node
 
 #return
 echo "Main Node Setup Completed"
