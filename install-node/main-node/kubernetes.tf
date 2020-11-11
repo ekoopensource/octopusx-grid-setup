@@ -1,8 +1,9 @@
+
   data "terraform_remote_state" "kube" {
     backend = "local"
 
     config = {
-    path = "state/grid/${var.grid}.state"
+    path = "states/grid/${var.grid}.state"
   }
   }
 

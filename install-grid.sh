@@ -13,7 +13,7 @@ region="eu-west-2"
 #./copystate.sh $grid_name
 
 #insall main node
-./install-node/main-node/install.sh $main_node_name $grid_name
+./install-node/main-node/install.sh $region $grid_name $main_node_name
 
 #insall service node
 #./install-node/service-node/install.sh $service_node_name

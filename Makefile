@@ -10,6 +10,8 @@ destroy-grid-ui:
 	./destroy-grid-gui.sh
 main-node:
 	./install-main-node.sh
+main-node-ui:
+	./install-main-node-gui.sh
 
 service-node:
 	./install-node/service-node/install.sh

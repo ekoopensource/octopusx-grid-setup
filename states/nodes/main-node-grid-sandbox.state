@@ -1,0 +1,61 @@
+{
+  "version": 4,
+  "terraform_version": "0.13.3",
+  "serial": 112,
+  "lineage": "4552d957-3967-d12a-5e7d-dd1bac4ece68",
+  "outputs": {},
+  "resources": [
+    {
+      "mode": "data",
+      "type": "terraform_remote_state",
+      "name": "kube",
+      "provider": "provider[\"terraform.io/builtin/terraform\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "backend": "local",
+            "config": {
+              "value": {
+                "path": "states/grid/grid-sandbox.state"
+              },
+              "type": [
+                "object",
+                {
+                  "path": "string"
+                }
+              ]
+            },
+            "defaults": null,
+            "outputs": {
+              "value": {
+                "cluster_certificate_authority_data": "LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUN5RENDQWJDZ0F3SUJBZ0lCQURBTkJna3Foa2lHOXcwQkFRc0ZBREFWTVJNd0VRWURWUVFERXdwcmRXSmwKY201bGRHVnpNQjRYRFRJd01URXhNVEUxTVRZeE1Wb1hEVE13TVRFd09URTFNVFl4TVZvd0ZURVRNQkVHQTFVRQpBeE1LYTNWaVpYSnVaWFJsY3pDQ0FTSXdEUVlKS29aSWh2Y05BUUVCQlFBRGdnRVBBRENDQVFvQ2dnRUJBTFBSCjNhSGdqR2EwMysxZlRXdGNEdG5vMHB4VjJ1QWxoL2hYRDY4WmN6Mjh6UzJhYjAxd3k4K04yQk5pM3VRM2pTVGQKdnRYQktBTmNLSldodHBGUjhSdC9LUmpWRFE3ZkhUUFdrWEdoVW81QWpleUtUSlhuVnlxTzluMDFXaXFGbzIvQQo3b1lkdE80bTFJWUlqTklON2hhdEpUMVVXZmlQSkVFeGVFbGJBaDMvMWswMmIwVlYrZUZDWEhQR1pZb21aMUZLCmRLSHQvc2tTeU96MVJCUVZKM1JHYmhxTjZTYU1wcTJSSDkwbXcrYTZDTy9tNE10OFVvZXQ1d3UyTHJEd0RLN3QKKzdQTVl2VUNqTXZ4YVhLSDJ3RjlwbUEvSzNPUTg3V3JBY2FaeUhOQ3F6Y3E0M2lwTW9sZVliTGcvT0pPUG11RAprWTBFeTBZc1R5WDMrTVBtbjJzQ0F3RUFBYU1qTUNFd0RnWURWUjBQQVFIL0JBUURBZ0trTUE4R0ExVWRFd0VCCi93UUZNQU1CQWY4d0RRWUpLb1pJaHZjTkFRRUxCUUFEZ2dFQkFIWDB4OHhIZjRETUlCQ2JNbWpqRFViWmp1UXoKaXRoYmZtQ3RNdXhBTUM5bTgyOUs4MXVVSE5sd1JqZlZtc1NKendFbW82SzllekZ4Nm13a0J3UWFCWUlZT0tzawpVOWI2NVVDbHV0UEZmcVI1UnRRMFY0T1BYa1JPWXg2UjVpWVdOMCtIRnZWdE1ZQWphLzVFUkVjZEdZUkhiUVJJCi9sK2Fkalp0dUx1VnlsWjJtRHhtM1lqN3VRVHg5R01QRHBaczc2YjJQQ3J1N0c4VVp0RFdZVGUxOTFwejJJanAKS2FrbStCUElVdkk5TkFFa0ptOW8rb1Y5OGlaZHlsZUVSTzlTS2lSMUpIRkpMMDlMRHZydXlQcTRKNFBPS1VidApDZkN1V0c0bGVuNSt3c1FvRVIxU21rZUt6WnJBdTh3a3EyR3JmbmVtWjJpSHAwcHZYODRjWUNXb2VHcz0KLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQo=",
+                "cluster_endpoint": "https://56A1D4EC9C9639B5950DA8DE50EF846D.gr7.eu-west-2.eks.amazonaws.com",
+                "cluster_name": "grid-sandbox",
+                "cluster_security_group_id": "sg-05387a13cb011c7d4",
+                "cluster_token": "k8s-aws-v1.aHR0cHM6Ly9zdHMuYW1hem9uYXdzLmNvbS8_QWN0aW9uPUdldENhbGxlcklkZW50aXR5JlZlcnNpb249MjAxMS0wNi0xNSZYLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFZQk9USkxSUUZZN1VYSVZVJTJGMjAyMDExMTElMkZ1cy1lYXN0LTElMkZzdHMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDIwMTExMVQxNTIwNTJaJlgtQW16LUV4cGlyZXM9MCZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QlM0J4LWs4cy1hd3MtaWQmWC1BbXotU2lnbmF0dXJlPWMxOWViNzkxNjc1MTNjMGJhZDk5NzY5MDBlMWJmY2YwZDcxM2JhZWZiZGMxNjkzY2FmYzAwYTUyZWM3NGQxNmM",
+                "kubectl_config": "apiVersion: v1\npreferences: {}\nkind: Config\n\nclusters:\n- cluster:\n    server: https://56A1D4EC9C9639B5950DA8DE50EF846D.gr7.eu-west-2.eks.amazonaws.com\n    certificate-authority-data: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUN5RENDQWJDZ0F3SUJBZ0lCQURBTkJna3Foa2lHOXcwQkFRc0ZBREFWTVJNd0VRWURWUVFERXdwcmRXSmwKY201bGRHVnpNQjRYRFRJd01URXhNVEUxTVRZeE1Wb1hEVE13TVRFd09URTFNVFl4TVZvd0ZURVRNQkVHQTFVRQpBeE1LYTNWaVpYSnVaWFJsY3pDQ0FTSXdEUVlKS29aSWh2Y05BUUVCQlFBRGdnRVBBRENDQVFvQ2dnRUJBTFBSCjNhSGdqR2EwMysxZlRXdGNEdG5vMHB4VjJ1QWxoL2hYRDY4WmN6Mjh6UzJhYjAxd3k4K04yQk5pM3VRM2pTVGQKdnRYQktBTmNLSldodHBGUjhSdC9LUmpWRFE3ZkhUUFdrWEdoVW81QWpleUtUSlhuVnlxTzluMDFXaXFGbzIvQQo3b1lkdE80bTFJWUlqTklON2hhdEpUMVVXZmlQSkVFeGVFbGJBaDMvMWswMmIwVlYrZUZDWEhQR1pZb21aMUZLCmRLSHQvc2tTeU96MVJCUVZKM1JHYmhxTjZTYU1wcTJSSDkwbXcrYTZDTy9tNE10OFVvZXQ1d3UyTHJEd0RLN3QKKzdQTVl2VUNqTXZ4YVhLSDJ3RjlwbUEvSzNPUTg3V3JBY2FaeUhOQ3F6Y3E0M2lwTW9sZVliTGcvT0pPUG11RAprWTBFeTBZc1R5WDMrTVBtbjJzQ0F3RUFBYU1qTUNFd0RnWURWUjBQQVFIL0JBUURBZ0trTUE4R0ExVWRFd0VCCi93UUZNQU1CQWY4d0RRWUpLb1pJaHZjTkFRRUxCUUFEZ2dFQkFIWDB4OHhIZjRETUlCQ2JNbWpqRFViWmp1UXoKaXRoYmZtQ3RNdXhBTUM5bTgyOUs4MXVVSE5sd1JqZlZtc1NKendFbW82SzllekZ4Nm13a0J3UWFCWUlZT0tzawpVOWI2NVVDbHV0UEZmcVI1UnRRMFY0T1BYa1JPWXg2UjVpWVdOMCtIRnZWdE1ZQWphLzVFUkVjZEdZUkhiUVJJCi9sK2Fkalp0dUx1VnlsWjJtRHhtM1lqN3VRVHg5R01QRHBaczc2YjJQQ3J1N0c4VVp0RFdZVGUxOTFwejJJanAKS2FrbStCUElVdkk5TkFFa0ptOW8rb1Y5OGlaZHlsZUVSTzlTS2lSMUpIRkpMMDlMRHZydXlQcTRKNFBPS1VidApDZkN1V0c0bGVuNSt3c1FvRVIxU21rZUt6WnJBdTh3a3EyR3JmbmVtWjJpSHAwcHZYODRjWUNXb2VHcz0KLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQo=\n  name: eks_grid-sandbox\n\ncontexts:\n- context:\n    cluster: eks_grid-sandbox\n    user: eks_grid-sandbox\n  name: eks_grid-sandbox\n\ncurrent-context: eks_grid-sandbox\n\nusers:\n- name: eks_grid-sandbox\n  user:\n    exec:\n      apiVersion: client.authentication.k8s.io/v1alpha1\n      command: aws-iam-authenticator\n      args:\n        - \"token\"\n        - \"-i\"\n        - \"grid-sandbox\"\n",
+                "region": "eu-west-2",
+                "vpc_id": "vpc-0f039bd906d943ea7"
+              },
+              "type": [
+                "object",
+                {
+                  "cluster_certificate_authority_data": "string",
+                  "cluster_endpoint": "string",
+                  "cluster_name": "string",
+                  "cluster_security_group_id": "string",
+                  "cluster_token": "string",
+                  "kubectl_config": "string",
+                  "region": "string",
+                  "vpc_id": "string"
+                }
+              ]
+            },
+            "workspace": null
+          }
+        }
+      ]
+    }
+  ]
+}

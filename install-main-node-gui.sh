@@ -1,9 +1,16 @@
 #!/bin/bash
 
-grid_name="grid-sandbox"
 main_node_name="main-node"
-region="eu-west-2"
 
+
+
+echo "OCTOPUSX NODE SETUP INTERACTIVE SHELL"
+
+echo "- - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
+
+
+read -p 'Grid Name: ' grid_name
+read -p 'Region: ' region
 
 #insall main node
 ./install-node/main-node/install.sh $region $grid_name $main_node_name
