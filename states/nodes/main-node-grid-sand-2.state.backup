@@ -2,7 +2,7 @@
   "version": 4,
   "terraform_version": "0.13.3",
   "serial": 1,
-  "lineage": "8ac42e20-6563-544b-2893-5ebe96e682a1",
+  "lineage": "0251e1fa-3ccf-bf3d-1876-6c2d8f555fef",
   "outputs": {},
   "resources": [
     {
@@ -60,7 +60,28 @@
     {
       "mode": "managed",
       "type": "helm_release",
-      "name": "data-service",
+      "name": "mysql-service",
+      "provider": "provider[\"registry.terraform.io/hashicorp/helm\"]",
+      "instances": []
+    },
+    {
+      "mode": "managed",
+      "type": "helm_release",
+      "name": "phpmyadmin-service",
+      "provider": "provider[\"registry.terraform.io/hashicorp/helm\"]",
+      "instances": []
+    },
+    {
+      "mode": "managed",
+      "type": "helm_release",
+      "name": "rabbitmq-service",
+      "provider": "provider[\"registry.terraform.io/hashicorp/helm\"]",
+      "instances": []
+    },
+    {
+      "mode": "managed",
+      "type": "helm_release",
+      "name": "sonarqube-service",
       "provider": "provider[\"registry.terraform.io/hashicorp/helm\"]",
       "instances": []
     },

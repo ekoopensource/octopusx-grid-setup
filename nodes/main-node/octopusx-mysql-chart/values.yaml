@@ -314,7 +314,7 @@ master:
     ## Persistent Volume Access Mode
     ##
     accessModes:
-      - ReadWriteMany
+      - ReadWriteOnce
     ## Persistent Volume size
     ##
     size: 8Gi
@@ -478,7 +478,7 @@ slave:
     ## Persistent Volume Access Mode
     ##
     accessModes:
-      - ReadWriteMany
+      - ReadWriteOnce
     ## Persistent Volume size
     ##
     size: 8Gi
