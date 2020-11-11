@@ -57,13 +57,13 @@ data "aws_eks_cluster_auth" "cluster" {
 
   output "cluster_endpoint" {
   value       = data.aws_eks_cluster.cluster.endpoint
-  description = "Cluster  token"
+  description = "Cluster  endpoint"
 
   }
 
 
   output "cluster_certificate_authority_data" {
   value       = data.aws_eks_cluster.cluster.certificate_authority.0.data
-  description = "Cluster  token"
+  description = "Cluster  CA"
 
   }

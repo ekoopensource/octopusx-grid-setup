@@ -1,8 +1,8 @@
 {
   "version": 4,
   "terraform_version": "0.13.3",
-  "serial": 4,
-  "lineage": "dac79f7d-5388-301c-fc3f-1a604b0dc4dd",
+  "serial": 1,
+  "lineage": "8ac42e20-6563-544b-2893-5ebe96e682a1",
   "outputs": {},
   "resources": [
     {
@@ -62,133 +62,14 @@
       "type": "helm_release",
       "name": "data-service",
       "provider": "provider[\"registry.terraform.io/hashicorp/helm\"]",
-      "instances": [
-        {
-          "schema_version": 0,
-          "attributes": {
-            "atomic": false,
-            "chart": "nodes/main-node/octopusx-data-chart",
-            "cleanup_on_fail": false,
-            "create_namespace": false,
-            "dependency_update": false,
-            "description": null,
-            "devel": null,
-            "disable_crd_hooks": false,
-            "disable_openapi_validation": false,
-            "disable_webhooks": false,
-            "force_update": false,
-            "id": "octopusx-data",
-            "keyring": null,
-            "lint": false,
-            "max_history": 0,
-            "metadata": [
-              {
-                "app_version": "latest",
-                "chart": "octopusx-data",
-                "name": "octopusx-data",
-                "namespace": "main-node",
-                "revision": 1,
-                "values": "{}",
-                "version": "0.1.0"
-              }
-            ],
-            "name": "octopusx-data",
-            "namespace": "main-node",
-            "postrender": [],
-            "recreate_pods": false,
-            "render_subchart_notes": true,
-            "replace": false,
-            "repository": null,
-            "repository_ca_file": null,
-            "repository_cert_file": null,
-            "repository_key_file": null,
-            "repository_password": null,
-            "repository_username": null,
-            "reset_values": false,
-            "reuse_values": false,
-            "set": [],
-            "set_sensitive": [],
-            "set_string": [],
-            "skip_crds": false,
-            "status": "deployed",
-            "timeout": 300,
-            "values": null,
-            "verify": false,
-            "version": "0.1.0",
-            "wait": true
-          },
-          "private": "bnVsbA==",
-          "dependencies": [
-            "kubernetes_namespace.node",
-            "kubernetes_secret.docker_config"
-          ]
-        }
-      ]
-    },
-    {
-      "mode": "managed",
-      "type": "kubernetes_namespace",
-      "name": "node",
-      "provider": "provider[\"registry.terraform.io/hashicorp/kubernetes\"]",
-      "instances": [
-        {
-          "schema_version": 0,
-          "attributes": {
-            "id": "main-node",
-            "metadata": [
-              {
-                "annotations": null,
-                "generate_name": "",
-                "generation": 0,
-                "labels": {
-                  "grid": "grid-sand-2"
-                },
-                "name": "main-node",
-                "resource_version": "25844",
-                "self_link": "/api/v1/namespaces/main-node",
-                "uid": "140b6b49-ca62-4cc0-ac67-cac84c94c427"
-              }
-            ],
-            "timeouts": null
-          },
-          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiZGVsZXRlIjozMDAwMDAwMDAwMDB9fQ=="
-        }
-      ]
+      "instances": []
     },
     {
       "mode": "managed",
       "type": "kubernetes_secret",
       "name": "docker_config",
       "provider": "provider[\"registry.terraform.io/hashicorp/kubernetes\"]",
-      "instances": [
-        {
-          "schema_version": 0,
-          "attributes": {
-            "data": {
-              ".dockerconfigjson": "    {\n      \"auths\": {\n        \"https://index.docker.io/v1/\": {\n          \"auth\": \"dXNlY29kZW5haWphOjYzMWNiMTBkLTgxZTgtNGIwZC05MzBjLWM4MzQ4NDdmMjJjZA==\"\n        }\n      }\n    }\n"
-            },
-            "id": "main-node/dockerregistrycred",
-            "metadata": [
-              {
-                "annotations": null,
-                "generate_name": "",
-                "generation": 0,
-                "labels": null,
-                "name": "dockerregistrycred",
-                "namespace": "main-node",
-                "resource_version": "25849",
-                "self_link": "/api/v1/namespaces/main-node/secrets/dockerregistrycred",
-                "uid": "b01d8f90-2f50-430d-9319-f491b1eafe9f"
-              }
-            ],
-            "type": "kubernetes.io/dockerconfigjson"
-          },
-          "private": "bnVsbA==",
-          "dependencies": [
-            "kubernetes_namespace.node"
-          ]
-        }
-      ]
+      "instances": []
     }
   ]
 }

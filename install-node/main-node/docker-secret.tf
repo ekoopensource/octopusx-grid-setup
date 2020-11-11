@@ -20,6 +20,7 @@
 
 
 
+
         resource "kubernetes_secret" "docker_config" {
     metadata {
     name = "dockerregistrycred"
@@ -39,4 +40,6 @@
     }
 
     type = "kubernetes.io/dockerconfigjson"
+
+      depends_on = [kubernetes_namespace.node]
   }

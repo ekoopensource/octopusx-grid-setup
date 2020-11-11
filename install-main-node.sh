@@ -1,6 +1,6 @@
 #!/bin/bash
 
-grid_name="grid-sandbox"
+grid_name="grid-sand-2"
 main_node_name="main-node"
 region="eu-west-2"
 
