@@ -1,0 +1,129 @@
+{
+  "version": 4,
+  "terraform_version": "0.13.3",
+  "serial": 1,
+  "lineage": "026c1f6e-68c2-6ac1-d79a-59ec92663faf",
+  "outputs": {},
+  "resources": [
+    {
+      "mode": "data",
+      "type": "terraform_remote_state",
+      "name": "kube",
+      "provider": "provider[\"terraform.io/builtin/terraform\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "backend": "local",
+            "config": {
+              "value": {
+                "path": "states/grid/grid-sand-2.state"
+              },
+              "type": [
+                "object",
+                {
+                  "path": "string"
+                }
+              ]
+            },
+            "defaults": null,
+            "outputs": {
+              "value": {
+                "cluster_certificate_authority_data": "LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUN5RENDQWJDZ0F3SUJBZ0lCQURBTkJna3Foa2lHOXcwQkFRc0ZBREFWTVJNd0VRWURWUVFERXdwcmRXSmwKY201bGRHVnpNQjRYRFRJd01URXhNVEUyTVRBeU9Gb1hEVE13TVRFd09URTJNVEF5T0Zvd0ZURVRNQkVHQTFVRQpBeE1LYTNWaVpYSnVaWFJsY3pDQ0FTSXdEUVlKS29aSWh2Y05BUUVCQlFBRGdnRVBBRENDQVFvQ2dnRUJBT1IzClhYcHA3SU5WcGtEL2h4V1FmKzdCVEF1TjZxSVdGK3BHQUt4dEZaYThQUC9DUkE4cnNDYitBRkxqaWk2cGs3U2wKRkMzaHBJc2RWNXhpY3JwcDMzU1lJNkVQOVd3TnBoRHVFeHRrbXF0MEZaVVVFV3hqQXNlOERySjJLS1dmZlFzVworenRWR2xIU1FWVXJUeG1qRGFWQmlYWm1lb3Q5dGIzd2pGRWY4THlCN3FvUzhJdDdqSGNZY2ZWQ2ROWUErWldrCllOMDc5TjVaK2RyUitSK0Z4WElqbWM3cHF4MklzMDlLUnhtWUxVODhHQ1VqQXRIdXJLYldoSklrbTducTBlb1oKMlNRdCt6RlExSHdBVG84NnhrdGhnV3Y2dkdDWWhqaG1Jc2lJNDg2eVRTcWlYZzBzY0hrRkR4VmFXa21wOFUySQovYzNDOU5YUDMraDcxbW84VTBNQ0F3RUFBYU1qTUNFd0RnWURWUjBQQVFIL0JBUURBZ0trTUE4R0ExVWRFd0VCCi93UUZNQU1CQWY4d0RRWUpLb1pJaHZjTkFRRUxCUUFEZ2dFQkFMK3dvNmdSTmI4aHl3MDJnMHNkbmUxckNING8KZTBnakpOdmZUS3JiTUJxdUYxMUhSb3RXa2hyLzduNSsydE5sbVNLaklaM3VEYTRlRUdZWGV6Q3Y4Zi9tQTJmMgpuTnEza24zV3B5R3FQcy8ra2JPZmFWcGVRaDgxUmpXQVFCOGtQY2pTRnNMSHRmYXAzN3dpM0lPQzJvMTFLRkIxCmppbE9BUDVpN0kvVU9YT0drcGs4VnZpWm1mVUh1ZDJGVm1PdzN5M0pyZzVvdEFrSU9Ld0xCSGp2ZWJKWE9qdE0KTCs4eDB1bWhGTXVsZjkyYjMxRWhRcXUwRlVXT1Z5Nlpwa2FvRzh3VU5TV0ZvRW5pNnRJL2hCaXVEeEpRK0pNdApMRUI2UVhNNlc1MUtLaVgxME94TFYxZUlGODdiZGxsb1U1ZGhsaGZvcW5uMEg4bGx0SCtqQzVPYXdRdz0KLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQo=",
+                "cluster_endpoint": "https://E30AD85267D1BA44B57373B59E5F7961.gr7.eu-west-2.eks.amazonaws.com",
+                "cluster_name": "grid-sand-2",
+                "cluster_security_group_id": "sg-0eea1f4f329ff76ba",
+                "cluster_token": "k8s-aws-v1.aHR0cHM6Ly9zdHMuYW1hem9uYXdzLmNvbS8_QWN0aW9uPUdldENhbGxlcklkZW50aXR5JlZlcnNpb249MjAxMS0wNi0xNSZYLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFZQk9USkxSUUZZN1VYSVZVJTJGMjAyMDExMTElMkZ1cy1lYXN0LTElMkZzdHMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDIwMTExMVQxNjE0NTlaJlgtQW16LUV4cGlyZXM9MCZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QlM0J4LWs4cy1hd3MtaWQmWC1BbXotU2lnbmF0dXJlPWU3NGEzMjcyZjlmNTUwYmIwZDgzZDI5NDk2MDkyYWIzNGEyMjI2YjZhNzdlNDdmYWMwZTliODE5NmJmZWIyZTg",
+                "kubectl_config": "apiVersion: v1\npreferences: {}\nkind: Config\n\nclusters:\n- cluster:\n    server: https://E30AD85267D1BA44B57373B59E5F7961.gr7.eu-west-2.eks.amazonaws.com\n    certificate-authority-data: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUN5RENDQWJDZ0F3SUJBZ0lCQURBTkJna3Foa2lHOXcwQkFRc0ZBREFWTVJNd0VRWURWUVFERXdwcmRXSmwKY201bGRHVnpNQjRYRFRJd01URXhNVEUyTVRBeU9Gb1hEVE13TVRFd09URTJNVEF5T0Zvd0ZURVRNQkVHQTFVRQpBeE1LYTNWaVpYSnVaWFJsY3pDQ0FTSXdEUVlKS29aSWh2Y05BUUVCQlFBRGdnRVBBRENDQVFvQ2dnRUJBT1IzClhYcHA3SU5WcGtEL2h4V1FmKzdCVEF1TjZxSVdGK3BHQUt4dEZaYThQUC9DUkE4cnNDYitBRkxqaWk2cGs3U2wKRkMzaHBJc2RWNXhpY3JwcDMzU1lJNkVQOVd3TnBoRHVFeHRrbXF0MEZaVVVFV3hqQXNlOERySjJLS1dmZlFzVworenRWR2xIU1FWVXJUeG1qRGFWQmlYWm1lb3Q5dGIzd2pGRWY4THlCN3FvUzhJdDdqSGNZY2ZWQ2ROWUErWldrCllOMDc5TjVaK2RyUitSK0Z4WElqbWM3cHF4MklzMDlLUnhtWUxVODhHQ1VqQXRIdXJLYldoSklrbTducTBlb1oKMlNRdCt6RlExSHdBVG84NnhrdGhnV3Y2dkdDWWhqaG1Jc2lJNDg2eVRTcWlYZzBzY0hrRkR4VmFXa21wOFUySQovYzNDOU5YUDMraDcxbW84VTBNQ0F3RUFBYU1qTUNFd0RnWURWUjBQQVFIL0JBUURBZ0trTUE4R0ExVWRFd0VCCi93UUZNQU1CQWY4d0RRWUpLb1pJaHZjTkFRRUxCUUFEZ2dFQkFMK3dvNmdSTmI4aHl3MDJnMHNkbmUxckNING8KZTBnakpOdmZUS3JiTUJxdUYxMUhSb3RXa2hyLzduNSsydE5sbVNLaklaM3VEYTRlRUdZWGV6Q3Y4Zi9tQTJmMgpuTnEza24zV3B5R3FQcy8ra2JPZmFWcGVRaDgxUmpXQVFCOGtQY2pTRnNMSHRmYXAzN3dpM0lPQzJvMTFLRkIxCmppbE9BUDVpN0kvVU9YT0drcGs4VnZpWm1mVUh1ZDJGVm1PdzN5M0pyZzVvdEFrSU9Ld0xCSGp2ZWJKWE9qdE0KTCs4eDB1bWhGTXVsZjkyYjMxRWhRcXUwRlVXT1Z5Nlpwa2FvRzh3VU5TV0ZvRW5pNnRJL2hCaXVEeEpRK0pNdApMRUI2UVhNNlc1MUtLaVgxME94TFYxZUlGODdiZGxsb1U1ZGhsaGZvcW5uMEg4bGx0SCtqQzVPYXdRdz0KLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQo=\n  name: eks_grid-sand-2\n\ncontexts:\n- context:\n    cluster: eks_grid-sand-2\n    user: eks_grid-sand-2\n  name: eks_grid-sand-2\n\ncurrent-context: eks_grid-sand-2\n\nusers:\n- name: eks_grid-sand-2\n  user:\n    exec:\n      apiVersion: client.authentication.k8s.io/v1alpha1\n      command: aws-iam-authenticator\n      args:\n        - \"token\"\n        - \"-i\"\n        - \"grid-sand-2\"\n",
+                "region": "eu-west-2",
+                "vpc_id": "vpc-0a80d436a1844fbe0"
+              },
+              "type": [
+                "object",
+                {
+                  "cluster_certificate_authority_data": "string",
+                  "cluster_endpoint": "string",
+                  "cluster_name": "string",
+                  "cluster_security_group_id": "string",
+                  "cluster_token": "string",
+                  "kubectl_config": "string",
+                  "region": "string",
+                  "vpc_id": "string"
+                }
+              ]
+            },
+            "workspace": null
+          }
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "helm_release",
+      "name": "data-service",
+      "provider": "provider[\"registry.terraform.io/hashicorp/helm\"]",
+      "instances": [
+        {
+          "status": "tainted",
+          "schema_version": 0,
+          "attributes": {
+            "atomic": false,
+            "chart": "nodes/main-node/octopusx-data-chart",
+            "cleanup_on_fail": false,
+            "create_namespace": true,
+            "dependency_update": false,
+            "description": null,
+            "devel": null,
+            "disable_crd_hooks": false,
+            "disable_openapi_validation": false,
+            "disable_webhooks": false,
+            "force_update": false,
+            "id": "octopusx-data",
+            "keyring": null,
+            "lint": false,
+            "max_history": 0,
+            "metadata": [
+              {
+                "app_version": "latest",
+                "chart": "octopusx-data",
+                "name": "octopusx-data",
+                "namespace": "main-node",
+                "revision": 1,
+                "values": "{}",
+                "version": "0.1.0"
+              }
+            ],
+            "name": "octopusx-data",
+            "namespace": "main-node",
+            "postrender": [],
+            "recreate_pods": false,
+            "render_subchart_notes": true,
+            "replace": false,
+            "repository": null,
+            "repository_ca_file": null,
+            "repository_cert_file": null,
+            "repository_key_file": null,
+            "repository_password": null,
+            "repository_username": null,
+            "reset_values": false,
+            "reuse_values": false,
+            "set": [],
+            "set_sensitive": [],
+            "set_string": [],
+            "skip_crds": false,
+            "status": "failed",
+            "timeout": 300,
+            "values": null,
+            "verify": false,
+            "version": "0.1.0",
+            "wait": true
+          },
+          "private": "bnVsbA==",
+          "dependencies": [
+            "data.terraform_remote_state.kube"
+          ]
+        }
+      ]
+    }
+  ]
+}
