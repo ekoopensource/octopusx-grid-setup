@@ -1,8 +1,8 @@
 {
   "version": 4,
   "terraform_version": "0.13.3",
-  "serial": 4,
-  "lineage": "fbf728c1-1836-96ce-9d4d-36b680272b6f",
+  "serial": 1,
+  "lineage": "40ec03b8-7ed7-dc15-3f5f-229a1727b511",
   "outputs": {},
   "resources": [
     {
@@ -33,7 +33,30 @@
                 "cluster_endpoint": "https://E30AD85267D1BA44B57373B59E5F7961.gr7.eu-west-2.eks.amazonaws.com",
                 "cluster_name": "grid-sand-2",
                 "cluster_security_group_id": "sg-0eea1f4f329ff76ba",
-                "cluster_token": "k8s-aws-v1.aHR0cHM6Ly9zdHMuYW1hem9uYXdzLmNvbS8_QWN0aW9uPUdldENhbGxlcklkZW50aXR5JlZlcnNpb249MjAxMS0wNi0xNSZYLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFZQk9USkxSUUZZN1VYSVZVJTJGMjAyMDExMTElMkZ1cy1lYXN0LTElMkZzdHMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDIwMTExMVQxNjE0NTlaJlgtQW16LUV4cGlyZXM9MCZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QlM0J4LWs4cy1hd3MtaWQmWC1BbXotU2lnbmF0dXJlPWU3NGEzMjcyZjlmNTUwYmIwZDgzZDI5NDk2MDkyYWIzNGEyMjI2YjZhNzdlNDdmYWMwZTliODE5NmJmZWIyZTg",
+                "cluster_token": "k8s-aws-v1.aHR0cHM6Ly9zdHMuYW1hem9uYXdzLmNvbS8_QWN0aW9uPUdldENhbGxlcklkZW50aXR5JlZlcnNpb249MjAxMS0wNi0xNSZYLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFZQk9USkxSUUZZN1VYSVZVJTJGMjAyMDExMTElMkZ1cy1lYXN0LTElMkZzdHMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDIwMTExMVQxOTUzMzRaJlgtQW16LUV4cGlyZXM9MCZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QlM0J4LWs4cy1hd3MtaWQmWC1BbXotU2lnbmF0dXJlPThhZTczNjEwNTk1MWYxMTQwYTFiNzY3YzU0ZTliNGI4YTAyM2VjZTcxZTJmOGU0ZTgxMTJhZGQyYjAwNDhkMzE",
+                "config_map_aws_auth": [
+                  {
+                    "binary_data": null,
+                    "data": null,
+                    "id": null,
+                    "metadata": [
+                      {
+                        "annotations": null,
+                        "generate_name": null,
+                        "generation": null,
+                        "labels": {
+                          "app.kubernetes.io/managed-by": "Terraform",
+                          "terraform.io/module": "terraform-aws-modules.eks.aws"
+                        },
+                        "name": "aws-auth",
+                        "namespace": "kube-system",
+                        "resource_version": null,
+                        "self_link": null,
+                        "uid": null
+                      }
+                    ]
+                  }
+                ],
                 "kubectl_config": "apiVersion: v1\npreferences: {}\nkind: Config\n\nclusters:\n- cluster:\n    server: https://E30AD85267D1BA44B57373B59E5F7961.gr7.eu-west-2.eks.amazonaws.com\n    certificate-authority-data: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUN5RENDQWJDZ0F3SUJBZ0lCQURBTkJna3Foa2lHOXcwQkFRc0ZBREFWTVJNd0VRWURWUVFERXdwcmRXSmwKY201bGRHVnpNQjRYRFRJd01URXhNVEUyTVRBeU9Gb1hEVE13TVRFd09URTJNVEF5T0Zvd0ZURVRNQkVHQTFVRQpBeE1LYTNWaVpYSnVaWFJsY3pDQ0FTSXdEUVlKS29aSWh2Y05BUUVCQlFBRGdnRVBBRENDQVFvQ2dnRUJBT1IzClhYcHA3SU5WcGtEL2h4V1FmKzdCVEF1TjZxSVdGK3BHQUt4dEZaYThQUC9DUkE4cnNDYitBRkxqaWk2cGs3U2wKRkMzaHBJc2RWNXhpY3JwcDMzU1lJNkVQOVd3TnBoRHVFeHRrbXF0MEZaVVVFV3hqQXNlOERySjJLS1dmZlFzVworenRWR2xIU1FWVXJUeG1qRGFWQmlYWm1lb3Q5dGIzd2pGRWY4THlCN3FvUzhJdDdqSGNZY2ZWQ2ROWUErWldrCllOMDc5TjVaK2RyUitSK0Z4WElqbWM3cHF4MklzMDlLUnhtWUxVODhHQ1VqQXRIdXJLYldoSklrbTducTBlb1oKMlNRdCt6RlExSHdBVG84NnhrdGhnV3Y2dkdDWWhqaG1Jc2lJNDg2eVRTcWlYZzBzY0hrRkR4VmFXa21wOFUySQovYzNDOU5YUDMraDcxbW84VTBNQ0F3RUFBYU1qTUNFd0RnWURWUjBQQVFIL0JBUURBZ0trTUE4R0ExVWRFd0VCCi93UUZNQU1CQWY4d0RRWUpLb1pJaHZjTkFRRUxCUUFEZ2dFQkFMK3dvNmdSTmI4aHl3MDJnMHNkbmUxckNING8KZTBnakpOdmZUS3JiTUJxdUYxMUhSb3RXa2hyLzduNSsydE5sbVNLaklaM3VEYTRlRUdZWGV6Q3Y4Zi9tQTJmMgpuTnEza24zV3B5R3FQcy8ra2JPZmFWcGVRaDgxUmpXQVFCOGtQY2pTRnNMSHRmYXAzN3dpM0lPQzJvMTFLRkIxCmppbE9BUDVpN0kvVU9YT0drcGs4VnZpWm1mVUh1ZDJGVm1PdzN5M0pyZzVvdEFrSU9Ld0xCSGp2ZWJKWE9qdE0KTCs4eDB1bWhGTXVsZjkyYjMxRWhRcXUwRlVXT1Z5Nlpwa2FvRzh3VU5TV0ZvRW5pNnRJL2hCaXVEeEpRK0pNdApMRUI2UVhNNlc1MUtLaVgxME94TFYxZUlGODdiZGxsb1U1ZGhsaGZvcW5uMEg4bGx0SCtqQzVPYXdRdz0KLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQo=\n  name: eks_grid-sand-2\n\ncontexts:\n- context:\n    cluster: eks_grid-sand-2\n    user: eks_grid-sand-2\n  name: eks_grid-sand-2\n\ncurrent-context: eks_grid-sand-2\n\nusers:\n- name: eks_grid-sand-2\n  user:\n    exec:\n      apiVersion: client.authentication.k8s.io/v1alpha1\n      command: aws-iam-authenticator\n      args:\n        - \"token\"\n        - \"-i\"\n        - \"grid-sand-2\"\n",
                 "region": "eu-west-2",
                 "vpc_id": "vpc-0a80d436a1844fbe0"
@@ -46,6 +69,48 @@
                   "cluster_name": "string",
                   "cluster_security_group_id": "string",
                   "cluster_token": "string",
+                  "config_map_aws_auth": [
+                    "tuple",
+                    [
+                      [
+                        "object",
+                        {
+                          "binary_data": [
+                            "map",
+                            "string"
+                          ],
+                          "data": [
+                            "map",
+                            "string"
+                          ],
+                          "id": "string",
+                          "metadata": [
+                            "list",
+                            [
+                              "object",
+                              {
+                                "annotations": [
+                                  "map",
+                                  "string"
+                                ],
+                                "generate_name": "string",
+                                "generation": "number",
+                                "labels": [
+                                  "map",
+                                  "string"
+                                ],
+                                "name": "string",
+                                "namespace": "string",
+                                "resource_version": "string",
+                                "self_link": "string",
+                                "uid": "string"
+                              }
+                            ]
+                          ]
+                        }
+                      ]
+                    ]
+                  ],
                   "kubectl_config": "string",
                   "region": "string",
                   "vpc_id": "string"
@@ -62,340 +127,35 @@
       "type": "helm_release",
       "name": "mysql-service",
       "provider": "provider[\"registry.terraform.io/hashicorp/helm\"]",
-      "instances": [
-        {
-          "status": "tainted",
-          "schema_version": 0,
-          "attributes": {
-            "atomic": false,
-            "chart": "nodes/main-node/octopusx-mysql-chart",
-            "cleanup_on_fail": false,
-            "create_namespace": false,
-            "dependency_update": false,
-            "description": null,
-            "devel": null,
-            "disable_crd_hooks": false,
-            "disable_openapi_validation": false,
-            "disable_webhooks": false,
-            "force_update": false,
-            "id": "octopusx-mysql",
-            "keyring": null,
-            "lint": false,
-            "max_history": 0,
-            "metadata": [
-              {
-                "app_version": "8.0.21",
-                "chart": "octopusx-mysql-2",
-                "name": "octopusx-mysql",
-                "namespace": "main-node",
-                "revision": 1,
-                "values": "{}",
-                "version": "6.14.10"
-              }
-            ],
-            "name": "octopusx-mysql",
-            "namespace": "main-node",
-            "postrender": [],
-            "recreate_pods": false,
-            "render_subchart_notes": true,
-            "replace": false,
-            "repository": null,
-            "repository_ca_file": null,
-            "repository_cert_file": null,
-            "repository_key_file": null,
-            "repository_password": null,
-            "repository_username": null,
-            "reset_values": false,
-            "reuse_values": false,
-            "set": [],
-            "set_sensitive": [],
-            "set_string": [],
-            "skip_crds": false,
-            "status": "failed",
-            "timeout": 300,
-            "values": null,
-            "verify": false,
-            "version": "6.14.10",
-            "wait": true
-          },
-          "private": "bnVsbA==",
-          "dependencies": [
-            "kubernetes_namespace.node",
-            "kubernetes_secret.docker_config"
-          ]
-        }
-      ]
+      "instances": []
     },
     {
       "mode": "managed",
       "type": "helm_release",
       "name": "phpmyadmin-service",
       "provider": "provider[\"registry.terraform.io/hashicorp/helm\"]",
-      "instances": [
-        {
-          "schema_version": 0,
-          "attributes": {
-            "atomic": false,
-            "chart": "nodes/main-node/octopusx-phpmyadmin-chart",
-            "cleanup_on_fail": false,
-            "create_namespace": false,
-            "dependency_update": false,
-            "description": null,
-            "devel": null,
-            "disable_crd_hooks": false,
-            "disable_openapi_validation": false,
-            "disable_webhooks": false,
-            "force_update": false,
-            "id": "octopusx-phpmyadmin",
-            "keyring": null,
-            "lint": false,
-            "max_history": 0,
-            "metadata": [
-              {
-                "app_version": "5.0.2",
-                "chart": "phpmyadmin",
-                "name": "octopusx-phpmyadmin",
-                "namespace": "main-node",
-                "revision": 1,
-                "values": "{}",
-                "version": "6.5.2"
-              }
-            ],
-            "name": "octopusx-phpmyadmin",
-            "namespace": "main-node",
-            "postrender": [],
-            "recreate_pods": false,
-            "render_subchart_notes": true,
-            "replace": false,
-            "repository": null,
-            "repository_ca_file": null,
-            "repository_cert_file": null,
-            "repository_key_file": null,
-            "repository_password": null,
-            "repository_username": null,
-            "reset_values": false,
-            "reuse_values": false,
-            "set": [],
-            "set_sensitive": [],
-            "set_string": [],
-            "skip_crds": false,
-            "status": "deployed",
-            "timeout": 300,
-            "values": null,
-            "verify": false,
-            "version": "6.5.2",
-            "wait": true
-          },
-          "private": "bnVsbA==",
-          "dependencies": [
-            "kubernetes_namespace.node",
-            "kubernetes_secret.docker_config"
-          ]
-        }
-      ]
+      "instances": []
     },
     {
       "mode": "managed",
       "type": "helm_release",
       "name": "rabbitmq-service",
       "provider": "provider[\"registry.terraform.io/hashicorp/helm\"]",
-      "instances": [
-        {
-          "status": "tainted",
-          "schema_version": 0,
-          "attributes": {
-            "atomic": false,
-            "chart": "nodes/main-node/octopusx-rabbitmq-chart",
-            "cleanup_on_fail": false,
-            "create_namespace": false,
-            "dependency_update": false,
-            "description": null,
-            "devel": null,
-            "disable_crd_hooks": false,
-            "disable_openapi_validation": false,
-            "disable_webhooks": false,
-            "force_update": false,
-            "id": "octopusx-rabbitmq",
-            "keyring": null,
-            "lint": false,
-            "max_history": 0,
-            "metadata": [
-              {
-                "app_version": "3.8.9",
-                "chart": "rabbitmq",
-                "name": "octopusx-rabbitmq",
-                "namespace": "main-node",
-                "revision": 1,
-                "values": "{}",
-                "version": "7.6.8"
-              }
-            ],
-            "name": "octopusx-rabbitmq",
-            "namespace": "main-node",
-            "postrender": [],
-            "recreate_pods": false,
-            "render_subchart_notes": true,
-            "replace": false,
-            "repository": null,
-            "repository_ca_file": null,
-            "repository_cert_file": null,
-            "repository_key_file": null,
-            "repository_password": null,
-            "repository_username": null,
-            "reset_values": false,
-            "reuse_values": false,
-            "set": [],
-            "set_sensitive": [],
-            "set_string": [],
-            "skip_crds": false,
-            "status": "failed",
-            "timeout": 300,
-            "values": null,
-            "verify": false,
-            "version": "7.6.8",
-            "wait": true
-          },
-          "private": "bnVsbA==",
-          "dependencies": [
-            "kubernetes_namespace.node",
-            "kubernetes_secret.docker_config"
-          ]
-        }
-      ]
+      "instances": []
     },
     {
       "mode": "managed",
       "type": "helm_release",
       "name": "sonarqube-service",
       "provider": "provider[\"registry.terraform.io/hashicorp/helm\"]",
-      "instances": [
-        {
-          "status": "tainted",
-          "schema_version": 0,
-          "attributes": {
-            "atomic": false,
-            "chart": "nodes/main-node/octopusx-sonarqube-chart",
-            "cleanup_on_fail": false,
-            "create_namespace": false,
-            "dependency_update": false,
-            "description": null,
-            "devel": null,
-            "disable_crd_hooks": false,
-            "disable_openapi_validation": false,
-            "disable_webhooks": false,
-            "force_update": false,
-            "id": "octopusx-sonarqube",
-            "keyring": null,
-            "lint": false,
-            "max_history": 0,
-            "metadata": [
-              {
-                "app_version": "8.5.1-community",
-                "chart": "sonarqube",
-                "name": "octopusx-sonarqube",
-                "namespace": "main-node",
-                "revision": 1,
-                "values": "{}",
-                "version": "9.1.2"
-              }
-            ],
-            "name": "octopusx-sonarqube",
-            "namespace": "main-node",
-            "postrender": [],
-            "recreate_pods": false,
-            "render_subchart_notes": true,
-            "replace": false,
-            "repository": null,
-            "repository_ca_file": null,
-            "repository_cert_file": null,
-            "repository_key_file": null,
-            "repository_password": null,
-            "repository_username": null,
-            "reset_values": false,
-            "reuse_values": false,
-            "set": [],
-            "set_sensitive": [],
-            "set_string": [],
-            "skip_crds": false,
-            "status": "failed",
-            "timeout": 300,
-            "values": null,
-            "verify": false,
-            "version": "9.1.2",
-            "wait": true
-          },
-          "private": "bnVsbA==",
-          "dependencies": [
-            "kubernetes_namespace.node",
-            "kubernetes_secret.docker_config"
-          ]
-        }
-      ]
-    },
-    {
-      "mode": "managed",
-      "type": "kubernetes_namespace",
-      "name": "node",
-      "provider": "provider[\"registry.terraform.io/hashicorp/kubernetes\"]",
-      "instances": [
-        {
-          "schema_version": 0,
-          "attributes": {
-            "id": "main-node",
-            "metadata": [
-              {
-                "annotations": null,
-                "generate_name": "",
-                "generation": 0,
-                "labels": {
-                  "grid": "grid-sand-2"
-                },
-                "name": "main-node",
-                "resource_version": "32709",
-                "self_link": "/api/v1/namespaces/main-node",
-                "uid": "e69bcb7d-3e39-4908-84f9-0a4e885fdbb0"
-              }
-            ],
-            "timeouts": null
-          },
-          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiZGVsZXRlIjozMDAwMDAwMDAwMDB9fQ=="
-        }
-      ]
+      "instances": []
     },
     {
       "mode": "managed",
       "type": "kubernetes_secret",
       "name": "docker_config",
       "provider": "provider[\"registry.terraform.io/hashicorp/kubernetes\"]",
-      "instances": [
-        {
-          "schema_version": 0,
-          "attributes": {
-            "data": {
-              ".dockerconfigjson": "    {\n      \"auths\": {\n        \"https://index.docker.io/v1/\": {\n          \"auth\": \"dXNlY29kZW5haWphOjYzMWNiMTBkLTgxZTgtNGIwZC05MzBjLWM4MzQ4NDdmMjJjZA==\"\n        }\n      }\n    }\n"
-            },
-            "id": "main-node/dockerregistrycred",
-            "metadata": [
-              {
-                "annotations": null,
-                "generate_name": "",
-                "generation": 0,
-                "labels": null,
-                "name": "dockerregistrycred",
-                "namespace": "main-node",
-                "resource_version": "32714",
-                "self_link": "/api/v1/namespaces/main-node/secrets/dockerregistrycred",
-                "uid": "046e4862-6fe4-4dd0-95ea-2cf73b8e7593"
-              }
-            ],
-            "type": "kubernetes.io/dockerconfigjson"
-          },
-          "private": "bnVsbA==",
-          "dependencies": [
-            "kubernetes_namespace.node"
-          ]
-        }
-      ]
+      "instances": []
     }
   ]
 }

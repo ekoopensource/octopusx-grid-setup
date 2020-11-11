@@ -8,7 +8,9 @@ echo "- - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
 
 read -p 'Grid Name: ' grid_name
 
-region="eu-west-2"
+read -p 'Region: ' region
+
+
 
 #set region
 

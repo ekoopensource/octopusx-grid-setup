@@ -40,3 +40,15 @@
 
 
 
+
+  resource "helm_release" "redis-service" {
+  name       = "octopusx-redis"
+  chart      = "nodes/main-node/octopusx-redis-chart"
+  namespace  = var.namespace
+    #create_namespace =  true
+
+  depends_on = [kubernetes_secret.docker_config,kubernetes_namespace.node]
+  }
+
+
+
