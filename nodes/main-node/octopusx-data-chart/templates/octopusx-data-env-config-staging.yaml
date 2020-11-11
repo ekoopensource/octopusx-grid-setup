@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Secret
+metadata:
+  name: octopusx-data-env-config-staging
+  labels:
+    name: octopusx-data-env-config-staging
+  #namespace: octopusx-main-node
+
+data:
+  .env: |-
+    {{ .Files.Get "staging.env" | b64enc }}

@@ -1,0 +1,63 @@
+{
+  "version": 4,
+  "terraform_version": "0.13.3",
+  "serial": 122,
+  "lineage": "793b8962-52fd-a2e2-2c78-5a1e82cbbe29",
+  "outputs": {},
+  "resources": [
+    {
+      "mode": "data",
+      "type": "terraform_remote_state",
+      "name": "grid",
+      "provider": "provider[\"terraform.io/builtin/terraform\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "backend": "local",
+            "config": {
+              "value": {
+                "path": "states/grid/octopusx-grid-sandbox.state"
+              },
+              "type": [
+                "object",
+                {
+                  "path": "string"
+                }
+              ]
+            },
+            "defaults": null,
+            "outputs": {
+              "value": {},
+              "type": [
+                "object",
+                {}
+              ]
+            },
+            "workspace": null
+          }
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "null_resource",
+      "name": "grid_destroy",
+      "provider": "provider[\"registry.terraform.io/hashicorp/null\"]",
+      "instances": [
+        {
+          "status": "tainted",
+          "schema_version": 0,
+          "attributes": {
+            "id": "7318349670431022782",
+            "triggers": null
+          },
+          "private": "bnVsbA==",
+          "dependencies": [
+            "data.terraform_remote_state.grid"
+          ]
+        }
+      ]
+    }
+  ]
+}
