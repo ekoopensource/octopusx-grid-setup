@@ -37,8 +37,8 @@ image:
 ## String to partially override rabbitmq.fullname template (will maintain the release name)
 ##
 
+
 nameOverride: octopusx-rabbitmq
-fullnameOverride: ""
 
 ## String to fully override rabbitmq.fullname template
 ##
@@ -54,12 +54,12 @@ auth:
   ## RabbitMQ application username
   ## ref: https://github.com/bitnami/bitnami-docker-rabbitmq#environment-variables
   ##
-  username: user
+  username: octopusx
 
   ## RabbitMQ application password
   ## ref: https://github.com/bitnami/bitnami-docker-rabbitmq#environment-variables
   ##
-  # password:
+  password: "password"
   # existingPasswordSecret: name-of-existing-secret
 
   ## Erlang cookie to determine whether different nodes are allowed to communicate with each other
@@ -528,7 +528,7 @@ networkPolicy:
 
 ## Kubernetes service type
 service:
-  type: LoadBalancer
+  type: ClusterIP
   ## Amqp port
   ## ref: https://github.com/bitnami/bitnami-docker-rabbitmq#environment-variables
   ##
@@ -536,7 +536,7 @@ service:
 
   ## Amqp Tls port
   ##
-  tlsPort: 55513
+  tlsPort: 5671
 
   ## Node port
   ## ref: https://github.com/bitnami/bitnami-docker-rabbitmq#environment-variables
