@@ -9,11 +9,10 @@
 module "eks" {
   source       = "terraform-aws-modules/eks/aws"
   cluster_name = var.cluster_name
-  cluster_version = "1.17"
+  cluster_version = "1.18"
   subnets      = module.vpc.private_subnets
   write_kubeconfig =  true
   config_output_path  = "kubeconfigs/"
-  kubelet_extra_args  = "--node-labels=node.kubernetes.io/lifecycle=spot"
 
   tags = {
     Environment = "sandbox"
@@ -24,7 +23,7 @@ module "eks" {
 
   node_groups_defaults = {
   ami_type  = "AL2_x86_64"
-  disk_size = 10
+  disk_size = 50
   additional_tags = {
   Name = "${var.cluster_name}-managed-node-eks"
   }
@@ -45,23 +44,24 @@ module "eks" {
   }
   }
 
-
   worker_groups = [
     {
-      name                          = "worker-group-1"
-      instance_type                 = "t2.medium"
+      name                          = "worker-group-3"
       additional_userdata           = "echo foo bar"
+      instance_type      =          "t2.large"
       asg_desired_capacity          = 2
       additional_security_group_ids = [aws_security_group.worker_group_mgmt_one.id]
       bootstrap_extra_args          = "--enable-docker-bridge true"
+      kubelet_extra_args      = "--node-labels=node.kubernetes.io/lifecycle=spot"
     },
     {
-      name                          = "worker-group-2"
-      instance_type                 = "t2.medium"
+      name                          = "worker-group-4"
       additional_userdata           = "echo foo bar"
+      instance_type                 = "t2.large"
       additional_security_group_ids = [aws_security_group.worker_group_mgmt_two.id]
       asg_desired_capacity          = 2
       bootstrap_extra_args          = "--enable-docker-bridge true"
+      kubelet_extra_args      = "--node-labels=node.kubernetes.io/lifecycle=spot"
     },
   ]
 }

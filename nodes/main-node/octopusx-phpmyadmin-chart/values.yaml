@@ -55,7 +55,7 @@ db:
 
   ## Database Hostname. Ignored when db.chartName is set.
   ##
-  host: octopusx-mysql-octopusx-mysql-2
+  host: octopusx-mysql
  # host: a21700dc91ae1480fa3ed5667e48124b-1540294970.eu-west-1.elb.amazonaws.com
 
   ## If you want to test phpMyAdmin, you can set it to bundle a MariaDB

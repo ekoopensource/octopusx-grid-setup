@@ -479,7 +479,7 @@ persistence:
   ##   matchLabels:
   ##     app: my-app
   selector: {}
-  accessMode: ReadWriteMany
+  accessMode: ReadWriteOnce
 
   ## Existing PersistentVolumeClaims
   ## The value is evaluated as a template
