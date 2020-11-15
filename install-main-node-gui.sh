@@ -4,7 +4,7 @@ main_node_name="main-node"
 
 
 
-echo "OCTOPUSX NODE SETUP INTERACTIVE SHELL"
+echo "OCTOPUSX MAIN NODE SETUP INTERACTIVE SHELL"
 
 echo "- - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
 

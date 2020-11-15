@@ -46,12 +46,12 @@ Run the following command to configure AWS CLI
 Run the following command to install grid
 
 
-    make grid-ui
+    make grid
  
  
  ## Install Node
 Run the following command to install a service node
 
 
-    make node-ui
+    make service-node
  
